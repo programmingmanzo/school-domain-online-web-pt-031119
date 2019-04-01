@@ -15,22 +15,13 @@ class School
     #binding.pry 
   end
   
-  def add_student(name, grade)
+  def add_student(name, grade) #Accepts 2 arguments
     #binding.pry 
     if @roster.include?(grade) == false 
       @roster[grade] = [] 
     end
     @roster[grade] << name 
   end 
-  
-  #def add_student(name, grade) #2 arguments passed through 
-   # binding.pry 
-  #  if @roster[grade] != nil #empty hash will always give you nil
-   # @roster[grade] << name
-  #else 
-   # @roster[grade] = [name] 
-   #end
-  #end
   
   def grade(grade)
     @roster[grade]
