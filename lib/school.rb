@@ -16,7 +16,7 @@ class School
   end
   
   def add_student(name, grade)
-    binding.pry 
+    #binding.pry 
     if @roster.include?(grade) == false 
       @roster[grade] = [] 
     end
@@ -39,7 +39,7 @@ class School
   def sort
     @roster.each do |grade, students|
       students.sort!
-      binding.pry 
+      #binding.pry 
     end 
   end 
 end
