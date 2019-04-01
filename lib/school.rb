@@ -5,13 +5,13 @@ class School
   
   
   def initialize(name)
-    @name = name 
-    @roster = {}
+    @name = name #@name is set with the argumetn that is passed through 
+    @roster = {} #@roster is set to an empty hash 
     binding.pry 
   end
   
   def roster
-    @roster
+    @roster #empty hash
     binding.pry 
   end
   
