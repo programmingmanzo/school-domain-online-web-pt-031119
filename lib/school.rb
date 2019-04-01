@@ -15,7 +15,7 @@ class School
     binding.pry 
   end
   
-  def add_student(name, grade)
+  def add_student(name, grade) #2 arguments passed through 
     binding.pry 
     if @roster[grade] != nil #empty hash will always give you nil
     @roster[grade] << name
