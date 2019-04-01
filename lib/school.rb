@@ -1,5 +1,4 @@
 # code here!
-#attr_accessor :grade :add_student 
 require 'pry'
 
 class School 
@@ -8,10 +7,12 @@ class School
   def initialize(name)
     @name = name 
     @roster = {}
+    binding.pry 
   end
   
   def roster
     @roster
+    binding.pry 
   end
   
   def add_student(name, grade)
